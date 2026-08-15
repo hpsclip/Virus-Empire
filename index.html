@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Empire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game">
+
+    <header class="topbar">
+        <div>
+            <div class="logo">VIRUS EMPIRE</div>
+            <div class="subtitle">EVOLUTION HAS BEGUN</div>
+        </div>
+
+        <div class="save-status" id="saveStatus">SAVED</div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="virus-orb">
+                <div class="virus-core">🦠</div>
+            </div>
+
+            <div class="main-stats">
+                <div class="label">INFECTED CELLS</div>
+                <div class="big-number" id="infectionCount">0</div>
+
+                <div class="rate">
+                    <span id="infectionRate">0</span> infection/sec
+                </div>
+
+                <button id="infectButton" class="infect-button">
+                    INFECT
+                </button>
+            </div>
+        </section>
+
+        <section class="resources">
+
+            <div class="resource">
+                <span>🧬</span>
+                <div>
+                    <small>DNA</small>
+                    <strong id="dna">0</strong>
+                </div>
+            </div>
+
+            <div class="resource">
+                <span>⚡</span>
+                <div>
+                    <small>RESEARCH</small>
+                    <strong id="research">0</strong>
+                </div>
+            </div>
+
+            <div class="resource">
+                <span>☣️</span>
+                <div>
+                    <small>MUTATIONS</small>
+                    <strong id="mutationCount">0</strong>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="grid">
+
+            <section class="panel">
+                <div class="panel-header">
+                    <h2>UPGRADES</h2>
+                    <span>POWER</span>
+                </div>
+
+                <div id="upgrades"></div>
+            </section>
+
+            <section class="panel">
+                <div class="panel-header">
+                    <h2>MUTATIONS</h2>
+                    <span>EVOLUTION</span>
+                </div>
+
+                <div id="mutations"></div>
+            </section>
+
+        </div>
+
+        <section class="panel">
+            <div class="panel-header">
+                <h2>RESEARCH</h2>
+                <span id="researchLevelText">LEVEL 1</span>
+            </div>
+
+            <div class="research-box">
+
+                <div>
+                    <div class="research-title">Research Laboratory</div>
+                    <p>
+                        Generate research automatically and unlock stronger
+                        biological upgrades.
+                    </p>
+                </div>
+
+                <button id="researchButton" class="research-button">
+                    RESEARCH
+                </button>
+
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-header">
+                <h2>ACHIEVEMENTS</h2>
+                <span id="achievementProgress">0 / 6</span>
+            </div>
+
+            <div id="achievements" class="achievements"></div>
+        </section>
+
+        <section class="panel stats-panel">
+            <div class="panel-header">
+                <h2>EMPIRE STATISTICS</h2>
+            </div>
+
+            <div class="stats-grid">
+                <div>
+                    <small>Total Infections</small>
+                    <strong id="totalInfections">0</strong>
+                </div>
+
+                <div>
+                    <small>Total DNA</small>
+                    <strong id="totalDNA">0</strong>
+                </div>
+
+                <div>
+                    <small>Play Time</small>
+                    <strong id="playTime">0s</strong>
+                </div>
+
+                <div>
+                    <small>Research Level</small>
+                    <strong id="researchLevel">1</strong>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <button id="resetButton" class="danger-button">
+                RESET EMPIRE
+            </button>
+
+            <div>VIRUS EMPIRE • v0.1.0</div>
+        </footer>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
